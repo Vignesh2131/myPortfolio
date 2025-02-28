@@ -40,14 +40,18 @@ export default function ProjectCard({title,description,skills,livelink,github}:C
         </div>
 
         <div className="flex gap-x-1">
-          <Button className="px-2 text-xs">
-            <Github />
-            GitHub
-          </Button>
-          <Button className="px-2 text-xs">
-            <ExternalLink />
-            Live Demo
-          </Button>
+          <a href={github}>
+            <Button className="px-2 text-xs">
+              <Github />
+              GitHub
+            </Button>
+          </a>
+          <a href={livelink}>
+            <Button className="px-2 text-xs">
+              <ExternalLink />
+              Live Demo
+            </Button>
+          </a>
         </div>
       </div>
     </div>
