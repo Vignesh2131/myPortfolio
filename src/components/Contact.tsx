@@ -13,8 +13,15 @@ const Contact = () => {
         <h3 className="text-4xl font-bold">Let’s Connect!</h3>
         <p className="text-center font-light">
           Have a project in mind or just want to chat about tech? Feel free to
-          reach out! Connect with me on <span>LinkedIn</span> or{" "}
-          <span>X (Twitter)</span>—I’d love to hear from you!
+          reach out! Connect with me on{" "}
+          <a href="https://www.linkedin.com/in/vignesh-sadhu/">
+            <span className="text-blue-500">LinkedIn</span>
+          </a>{" "}
+          or{" "}
+          <a href="https://x.com/automatedlife21">
+            <span className="text-blue-500">X (Twitter)</span>
+          </a>
+          —I’d love to hear from you!
         </p>
       </div>
     </section>

@@ -1,5 +1,4 @@
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { Github, ExternalLink } from "lucide-react";
 import Image from "next/image";
 interface CardProps{
@@ -12,8 +11,8 @@ interface CardProps{
 }
 export default function ProjectCard({title,description,skills,livelink,github}:CardProps) {
   return (
-    <div className="w-[350px] mx-auto rounded-md border border-white">
-      <div className="relative w-full h-48">
+    <div className="w-[300px] md:w-[350px] mx-auto rounded-md border border-white">
+      <div className="relative w-full h-44 md:h-48">
         <Image
           src={`/${title}.png`}
           alt={title}
@@ -21,10 +20,10 @@ export default function ProjectCard({title,description,skills,livelink,github}:C
           className="object-fit rounded-t-md"
         />
       </div>
-      <div className="p-2 flex flex-col gap-y-2">
-        <h2 className="text-xl font-semibold tracking-tight">{title}</h2>
-        <div className="space-y-4">
-          <p className="text-gray-700 text-sm">{description}</p>
+      <div className="p-2 flex flex-col sm:gap-y-1 md:gap-y-2">
+        <h2 className="text-lg font-semibold tracking-tight">{title}</h2>
+        <div className="flex flex-col gap-y-1">
+          <p className="text-gray-500 text-sm">{description}</p>
 
           <div className="flex flex-wrap gap-1">
             {skills.map((skill, i) => (
@@ -39,18 +38,18 @@ export default function ProjectCard({title,description,skills,livelink,github}:C
           </div>
         </div>
 
-        <div className="flex gap-x-1">
+        <div className="flex gap-x-1 mt-1">
           <a href={github}>
-            <Button className="px-2 text-xs">
-              <Github />
+            <Badge className="px-2 text-xs flex gap-x-1">
+              <Github size={14}/>
               GitHub
-            </Button>
+            </Badge>
           </a>
           <a href={livelink}>
-            <Button className="px-2 text-xs">
-              <ExternalLink />
+            <Badge className="px-2 text-xs flex gap-x-1">
+              <ExternalLink size={14} />
               Live Demo
-            </Button>
+            </Badge>
           </a>
         </div>
       </div>

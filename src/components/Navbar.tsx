@@ -4,7 +4,8 @@ import {
   Github,
   UserRound,
   Boxes,
-  Twitter
+  Twitter,
+  FileUser
 } from "lucide-react";
 
 const Navbar = () => {
@@ -28,12 +29,21 @@ const Navbar = () => {
         <div className="bg-white h-full w-[1px]"></div>
 
         <ul className="flex items-center gap-x-3">
-          <li className="transition  duration-200 ease-in-out hover:-translate-y-1 hover:scale-110">
-            <Github strokeWidth={1} className="h-5 w-5" />
-          </li>
-          <li className="transition  duration-200 ease-in-out hover:-translate-y-1 hover:scale-110">
-            <Twitter strokeWidth={1} className="h-5 w-5" />
-          </li>
+          <a href="\Vignesh_Resume.pdf" download>
+            <li className="transition  duration-200 ease-in-out hover:-translate-y-1 hover:scale-110">
+              <FileUser strokeWidth={1} className="h-5 w-5" />
+            </li>
+          </a>
+          <a href="https://github.com/Vignesh2131">
+            <li className="transition  duration-200 ease-in-out hover:-translate-y-1 hover:scale-110">
+              <Github strokeWidth={1} className="h-5 w-5" />
+            </li>
+          </a>
+          <a href="https://x.com/automatedlife21">
+            <li className="transition  duration-200 ease-in-out hover:-translate-y-1 hover:scale-110">
+              <Twitter strokeWidth={1} className="h-5 w-5" />
+            </li>
+          </a>
         </ul>
       </div>
     </nav>
