@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard";
 import projects from "@/lib/projects";
 const Projects = () => {
   return (
-    <section className="flex flex-col mx-auto items-center gap-y-2 mb-8 w-[300px] md:w-full">
+    <section className="flex flex-col mx-auto items-center gap-y-2 mb-8 w-[300px] md:w-full" id="projects">
       <h2>
         <Badge className="text-sm md:text-base text-white" variant="outline">
           My Projects

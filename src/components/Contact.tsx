@@ -3,7 +3,7 @@ import { Badge } from "./ui/badge";
 
 const Contact = () => {
   return (
-    <section className="flex space-y-2 mx-auto items-center flex-col w-[300px] md:w-[700px] mb-24">
+    <section className="flex space-y-2 mx-auto items-center flex-col w-[300px] md:w-[700px] mb-24" id="contact">
       <div>
         <Badge className="text-base text-white" variant="outline">
           Contact me

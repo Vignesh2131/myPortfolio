@@ -4,7 +4,7 @@ const skillset = ["React.js", "Next.js", "Recoil", "TailwindCSS", "TypeScript", 
 ]
 const Skills = () => {
   return (
-    <section className="flex mx-auto flex-col w-[300px] md:w-[700px] mb-8">
+    <section className="flex mx-auto flex-col w-[300px] md:w-[700px] mb-8" id="skills">
       <div className="mb-0 md:mb-2">
         <h1 className="text-base md:text-xl font-bold">Skills</h1>
       </div>

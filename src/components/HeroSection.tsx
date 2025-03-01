@@ -1,7 +1,7 @@
 
 const HeroSection = () => {
   return (
-    <main className="flex justify-center mx-auto mt-24 mb-8 items-center w-[300px] md:w-[700px]">
+    <main className="flex justify-center mx-auto mt-24 mb-8 items-center w-[300px] md:w-[700px]" id="home">
       <div>
         <div className="flex justify-between items-center">
           <div className="flex flex-col gap-y-1 relative">
